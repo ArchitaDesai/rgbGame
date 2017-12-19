@@ -1,0 +1,79 @@
+/* -webkit is for Safari and -moz is for Mozilla browser */
+
+body{
+	background-color: #232323;
+	color: white;
+}
+
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px;
+	background: steelblue;
+}
+
+button{
+	border: none;
+	background: none;
+	height: 100%;
+	letter-spacing: 1px;
+	font-weight: 700;
+	color: steelblue;
+	font-size: inherit;
+	/* removes annoying outline from button when clicked*/
+	outline: none; 
+	/* transition: all 2.0s; */
+}
+
+button:hover{
+	background: steelblue;
+	color: white;
+	/* when I hover over button, it will take 0.3 seconds to change all properties */
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}
+
+.square{
+	width: 30%;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 25%;
+	/* It will take 0.2 seconds to change background of squares */
+	transition: background 0.2s;
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+}
+
+.selected{
+	background: steelblue;
+	color: white;
+}
+
+
+
+#container{
+	margin: 0 auto;
+	max-width: 600px;
+	padding-top: 20px;
+}
+
+#colorValue{
+	font-weight: 600;
+	margin: 10px;
+	font-size: 1.5em;
+}
+
+#stripe{
+	height: 35px;
+	background: white;
+	color: black;
+	text-align: center;
+}
+
+#message{
+	display: inline-block;
+	width: 20%;
+}
